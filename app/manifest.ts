@@ -12,5 +12,9 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#101617",
     theme_color: "#101617",
     icons: [{ src: "/favicon.png", sizes: "512x512", type: "image/png" }],
+    shortcuts: [
+      { name: "Safety tools", short_name: "Tools", url: "/tools", icons: [{ src: "/favicon.png", sizes: "512x512", type: "image/png" }] },
+      { name: "Security guides", short_name: "Guides", url: "/guides", icons: [{ src: "/favicon.png", sizes: "512x512", type: "image/png" }] },
+    ],
   };
 }

@@ -65,6 +65,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section safety-lab-section">
+        <div className="shell">
+          <div className="section-heading split-heading"><div><span className="eyebrow">Free safety lab</span><h2>Prepare before<br />the stressful moment.</h2></div><p>Use private browser tools and source-linked guides without creating an account or submitting personal information.</p></div>
+          <div className="safety-lab-grid">
+            <Link href="/risk-check"><small>01 / CHECK</small><h3>Phone Theft Risk Check</h3><p>Find the practical gaps in your current Android recovery setup.</p><span>Run the check <ArrowIcon size={16} /></span></Link>
+            <Link href="/emergency-plan"><small>02 / PLAN</small><h3>Emergency Plan Builder</h3><p>Create a printable response sheet that stays inside your browser.</p><span>Build a plan <ArrowIcon size={16} /></span></Link>
+            <Link href="/guides"><small>03 / LEARN</small><h3>Phone Security Guides</h3><p>Use calm, sourced preparation and incident-response guidance.</p><span>Browse guides <ArrowIcon size={16} /></span></Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section privacy-section">
         <div className="shell privacy-grid"><div className="privacy-mark"><div className="shield-rings"><ShieldIcon size={70} /></div></div><div className="privacy-copy"><span className="eyebrow">Privacy is the architecture</span><h2>Your location belongs to you.</h2><p>GeoFence Guardian performs boundary checks locally. Zone coordinates are not uploaded to a GeoFence Guardian server, and authentication is handled by Android’s secure system APIs.</p><ul className="check-list"><li><span>✓</span> Local geofence decisions</li><li><span>✓</span> System-managed authentication</li><li><span>✓</span> No advertising SDK</li><li><span>✓</span> Clear background monitoring</li></ul><Link className="text-link dark" href="/privacy">Read the Privacy Policy <ArrowIcon size={17} /></Link></div></div>
       </section>

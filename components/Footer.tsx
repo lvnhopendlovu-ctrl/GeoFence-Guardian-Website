@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { playStoreUrl, rateAppUrl } from "@/lib/seo";
+import { playStoreUrl, rateAppUrl, repositoryUrl } from "@/lib/seo";
 
 export function Footer() {
   return (
@@ -17,28 +17,29 @@ export function Footer() {
           <div>
             <span>Explore</span>
             <Link href="/features">Features</Link>
+            <Link href="/tools">Free safety tools</Link>
             <Link href="/demo">Interactive demo</Link>
-            <Link href="/about">About</Link>
-            <Link href="/releases">Release notes</Link>
+            <Link href="/guides">Security guides</Link>
           </div>
           <div>
-            <span>Get help</span>
+            <span>Trust &amp; help</span>
+            <Link href="/trust">Trust centre</Link>
             <Link href="/help">Help centre</Link>
             <Link href="/support">Support &amp; feedback</Link>
             <Link href="/privacy">Privacy policy</Link>
-            <Link href="/terms">Terms of use</Link>
           </div>
           <div>
-            <span>Take action</span>
-            <a href={playStoreUrl} rel="noopener noreferrer" target="_blank">Get the Android app ↗</a>
-            <a href={rateAppUrl} rel="noopener noreferrer" target="_blank">Rate on Google Play ↗</a>
-            <Link href="/donate">Support development</Link>
+            <span>Follow progress</span>
+            <Link href="/updates">Project updates</Link>
+            <Link href="/releases">Release notes</Link>
+            <a href="/feed.xml">RSS feed</a>
+            <a href={repositoryUrl} rel="noopener noreferrer" target="_blank">Public GitHub ↗</a>
           </div>
         </div>
       </div>
       <div className="shell footer-bottom">
         <p>© {new Date().getFullYear()} GeoFence Guardian</p>
-        <p>Version 8.1 · Personal security should feel personal.</p>
+        <p><a href={playStoreUrl} rel="noopener noreferrer" target="_blank">Get the app</a> · <a href={rateAppUrl} rel="noopener noreferrer" target="_blank">Rate it</a> · <Link href="/terms">Terms</Link> · <Link href="/donate">Support</Link></p>
       </div>
     </footer>
   );

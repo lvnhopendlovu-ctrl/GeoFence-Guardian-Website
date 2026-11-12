@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GeofenceDemo } from "@/components/GeofenceDemo";
+import { EscapeChallenge } from "@/components/EscapeChallenge";
 import { ArrowIcon, PlayStoreIcon } from "@/components/Icons";
 import { pageMetadata, playStoreUrl } from "@/lib/seo";
 
@@ -22,6 +23,9 @@ export default function DemoPage() {
       </section>
       <section className="section demo-section">
         <div className="shell"><GeofenceDemo /></div>
+      </section>
+      <section className="section challenge-section">
+        <div className="shell"><EscapeChallenge /></div>
       </section>
       <section className="section demo-explainer-section">
         <div className="shell demo-explainer-grid">

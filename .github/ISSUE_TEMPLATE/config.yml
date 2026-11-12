@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General questions and ideas
+    url: https://github.com/lvnhopendlovu-ctrl/GeoFence-Guardian-Website/discussions
+    about: Use Discussions for questions, brainstorming, and non-bug feedback.
+  - name: Product help
+    url: https://geofenceguardians.co.za/help/
+    about: Review setup and troubleshooting guidance before opening an issue.

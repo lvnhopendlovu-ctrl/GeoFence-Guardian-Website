@@ -26,6 +26,12 @@ export const metadata: Metadata = {
   description: "Protect your Android device with a 10–500 metre geofence alarm. GeoFence Guardian monitors your boundary and processes location data on your device.",
   icons: { icon: "/favicon.png", apple: "/favicon.png" },
   manifest: "/manifest.webmanifest",
+  alternates: {
+    types: {
+      "application/rss+xml": `${siteUrl}/feed.xml`,
+      "application/feed+json": `${siteUrl}/feed.json`,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_ZA",
@@ -93,6 +99,9 @@ export default function RootLayout({
           price: "0",
           priceCurrency: "ZAR",
         },
+        isAccessibleForFree: true,
+        featureList: ["Saved geofence zones", "Daily schedules", "Offline boundary calculations", "Custom alarms", "Local event history", "Secure owner controls"],
+        screenshot: `${siteUrl}/social-card.png`,
         description: "A privacy-first Android geofence alarm with saved zones, schedules, custom alerts, and local event history.",
       },
     ],
