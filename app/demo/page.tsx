@@ -2,6 +2,7 @@ import Link from "next/link";
 import { GeofenceDemo } from "@/components/GeofenceDemo";
 import { EscapeChallenge } from "@/components/EscapeChallenge";
 import { ArrowIcon, PlayStoreIcon } from "@/components/Icons";
+import { SpyQuiz } from "@/components/SpyQuiz";
 import { pageMetadata, playStoreUrl } from "@/lib/seo";
 
 export const metadata = pageMetadata(
@@ -26,6 +27,9 @@ export default function DemoPage() {
       </section>
       <section className="section challenge-section">
         <div className="shell"><EscapeChallenge /></div>
+      </section>
+      <section className="section spy-quiz-section">
+        <div className="shell"><SpyQuiz /></div>
       </section>
       <section className="section demo-explainer-section">
         <div className="shell demo-explainer-grid">
