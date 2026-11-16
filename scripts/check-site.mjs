@@ -1,5 +1,5 @@
 const base = "https://geofenceguardians.co.za";
-const paths = ["/", "/features/", "/tools/", "/risk-check/", "/emergency-plan/", "/guides/", "/trust/", "/updates/", "/feed.xml", "/sitemap.xml"];
+const paths = ["/", "/features/", "/tools/", "/risk-check/", "/emergency-plan/", "/guides/", "/trust/", "/updates/", "/rss/", "/feed.xml", "/sitemap.xml"];
 
 const failures = [];
 

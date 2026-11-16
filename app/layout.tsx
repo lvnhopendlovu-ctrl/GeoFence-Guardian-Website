@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
-import { currentVersion, playStoreUrl, repositoryUrl, siteName, siteUrl } from "@/lib/seo";
+import { currentVersion, playStoreUrl, siteName, siteUrl } from "@/lib/seo";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -70,7 +70,7 @@ export default function RootLayout({
           "@type": "ImageObject",
           url: `${siteUrl}/logo.png`,
         },
-        sameAs: [playStoreUrl, repositoryUrl],
+        sameAs: [playStoreUrl],
       },
       {
         "@type": "WebSite",
@@ -91,7 +91,7 @@ export default function RootLayout({
         url: siteUrl,
         installUrl: playStoreUrl,
         downloadUrl: playStoreUrl,
-        sameAs: [playStoreUrl, repositoryUrl],
+        sameAs: [playStoreUrl],
         author: { "@id": `${siteUrl}/#organization` },
         mainEntityOfPage: { "@id": `${siteUrl}/#website` },
         offers: {

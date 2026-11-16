@@ -9,7 +9,7 @@ function escapeXml(value: string) {
 
 export function GET() {
   const items = siteUpdates.map((item) => {
-    const link = item.href.startsWith("http") ? item.href : `${siteUrl}${item.href}`;
+    const link = item.href ? (item.href.startsWith("http") ? item.href : `${siteUrl}${item.href}`) : `${siteUrl}/updates#${item.slug}`;
     return `<item><title>${escapeXml(item.title)}</title><link>${escapeXml(link)}</link><guid isPermaLink="false">${escapeXml(`${siteUrl}/updates#${item.slug}`)}</guid><pubDate>${new Date(`${item.date}T12:00:00+02:00`).toUTCString()}</pubDate><description>${escapeXml(item.summary)}</description></item>`;
   }).join("");
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { playStoreUrl, rateAppUrl, repositoryUrl } from "@/lib/seo";
+import { playStoreUrl, rateAppUrl } from "@/lib/seo";
 
 export function Footer() {
   return (
@@ -32,8 +32,7 @@ export function Footer() {
             <span>Follow progress</span>
             <Link href="/updates">Project updates</Link>
             <Link href="/releases">Release notes</Link>
-            <a href="/feed.xml">RSS feed</a>
-            <a href={repositoryUrl} rel="noopener noreferrer" target="_blank">Public GitHub ↗</a>
+            <Link href="/rss">RSS feed</Link>
           </div>
         </div>
       </div>

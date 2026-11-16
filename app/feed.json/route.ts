@@ -12,7 +12,7 @@ export function GET() {
     language: "en-ZA",
     items: siteUpdates.map((item) => ({
       id: `${siteUrl}/updates#${item.slug}`,
-      url: item.href.startsWith("http") ? item.href : `${siteUrl}${item.href}`,
+      url: item.href ? (item.href.startsWith("http") ? item.href : `${siteUrl}${item.href}`) : `${siteUrl}/updates#${item.slug}`,
       title: item.title,
       content_text: item.summary,
       date_published: `${item.date}T12:00:00+02:00`,

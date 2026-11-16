@@ -3,7 +3,7 @@ export type SiteUpdate = {
   date: string;
   title: string;
   summary: string;
-  href: string;
+  href?: string;
   category: "release" | "guide" | "project";
 };
 
@@ -20,8 +20,7 @@ export const siteUpdates: SiteUpdate[] = [
     slug: "website-moved-to-github-pages",
     date: "2026-11-12",
     title: "The website is now served by GitHub Pages",
-    summary: "The public website source, deployment history, and community tools now live in a dedicated public repository.",
-    href: "https://github.com/lvnhopendlovu-ctrl/GeoFence-Guardian-Website",
+    summary: "The public website now runs on GitHub Pages with automated deployments and live-site checks.",
     category: "project",
   },
   {
